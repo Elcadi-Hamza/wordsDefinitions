@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Word Helper</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 250px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #wordDetails {
+        font-size: 14px;
+        color: #333;
+    }
+    #wordDetails strong {
+        font-weight: bold;
+    }
+    .synonyms {
+        margin-top: 10px;
+    }
+    .synonym-item {
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #007bff;
+    }
+    .synonym-item:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <h1>Word Helper</h1>
+    <p>Select a word in any website to see its meaning and synonyms!</p>
+
+    <div id="wordDetails">
+        <strong>Word:</strong> <span id="word"></span><br>
+        <strong>Definition:</strong> <span id="definition"></span><br>
+        <div class="synonyms">
+            <strong>Synonyms:</strong>
+            <ul id="synonymsList"></ul>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
